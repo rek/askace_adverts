@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Askace-adverts
+ * Plugin Name: Askace adverts
  * Description: To use css advert templates to show products and catalogue them.
  * Version: 0.4
  * Author: rekarnar 
@@ -9,13 +9,15 @@
  */
 
 global $askace_adverts_db_version;
-$askace_adverts_db_version = "0.3";
+$askace_adverts_db_version = "0.4";
 
 add_action('admin_menu', 'askace_adverts_menu_item');
 function askace_adverts_menu_item(){
-    add_menu_page( 'Askace Adverts', 'Askace Adverts', 'manage_options', 'askace-adverts/adverts-admin.php', '', 'http://www.askace.com/favicon.ico', 67 );
+    add_menu_page( 'Askace Ads', 'Askace Ads', 'manage_options', 'askace_adverts/adverts-admin.php', '', 'http://www.askace.com/favicon.ico', 67 );
 
-    add_submenu_page( 'askace-adverts/adverts-admin.php', 'Add New', 'Add an Advert', 'manage_options', 'askace-adverts/adverts-add.php', '' ); 
+    add_submenu_page( 'askace_adverts/adverts-admin.php', 'Add New', 'Add an Advert', 'manage_options', 'askace_adverts/adverts-add.php', '' );
+
+    add_submenu_page( 'askace_adverts/adverts-admin.php', 'Edit Advert', 'Edit Advert', 'manage_options', 'askace_adverts/adverts-edit.php' );
 
 }
 

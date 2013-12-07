@@ -78,9 +78,9 @@ if(isset($_POST['submit'])) {
 <div>
   <input type="submit" name="submit" value="Add" />
 <?php
-$page     = 'adverts-adverts';
+$page     = 'askace_adverts/adverts-admin.php';
 $view_url = add_query_arg(compact('page'), admin_url('admin.php'));
 ?>
-  <a href="<?php echo view_url; ?>">View All</a>
+  <a href="<?php echo $view_url; ?>">View All</a>
 </div>
 </form>

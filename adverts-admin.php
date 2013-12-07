@@ -43,7 +43,7 @@ echo '<div class="wrap">';
                 $class = ( $count % 2 == 0 ) ? ' class="alternate"' : '';
             ?>
 <?php
-$page   = 'adverts-edit';
+$page   = 'askace_adverts/adverts-edit.php';
 $id     = $entry->id;
 $advert_url = add_query_arg(compact('page', 'id'), admin_url('admin.php'));
 ?>
