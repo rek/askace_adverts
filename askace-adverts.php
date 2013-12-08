@@ -17,8 +17,6 @@ function askace_adverts_menu_item(){
 
     add_submenu_page( 'askace_adverts/adverts-admin.php', 'Add New', 'Add an Advert', 'manage_options', 'askace_adverts/adverts-add.php', '' );
 
-    add_submenu_page( 'askace_adverts/adverts-admin.php', 'Edit Advert', 'Edit Advert', 'manage_options', 'askace_adverts/adverts-edit.php' );
-
 }
 
 register_activation_hook( __FILE__, 'askace_adverts_install' );
