@@ -90,5 +90,5 @@
     $page     = 'askace_adverts/adverts-add.php';
     $add_url = add_query_arg(compact('page'), admin_url('admin.php'));
 ?>
-    <div><p><a href="<?php echo $add_url; ?>">Add</a></p></div>
+    <div><p><a href="<?php echo $add_url; ?>">Add New</a></p></div>
 </div>

@@ -4,8 +4,8 @@ jQuery(document).ready(function() {
    tb_show('', 'media-upload.php?type=image&amp;TB_iframe=true');
    var _TBwindow = jQuery('#TB_window');
    _TBwindow.css('margin-left', '200px');
-   _TBwindow.css('margin-top', '300px');
-   _TBwindow.css('border', '2px solid #fff');
+   _TBwindow.css('margin-top', '200px');
+   _TBwindow.css('border', '1px solid #ccc');
    _TBwindow.css('height', '290px');
    _TBwindow.css('z-index', '1111');
    _TBwindow.css('background-color', '#000');
@@ -15,8 +15,8 @@ jQuery(document).ready(function() {
 
  window.send_to_editor = function(html) {
    //var imgurl = jQuery('img',html).attr('src');
-   var id = jQuery('class',html);
-   jQuery('#upload_image').val(id.match('[0-9].*$'));
+   var id = jQuery('img',html).attr('class').match('[0-9].*$');
+   jQuery('#upload_image').val(id);
    tb_remove();
  }
 });

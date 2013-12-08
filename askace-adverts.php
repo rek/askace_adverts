@@ -1,15 +1,15 @@
 <?php
 /**
- * Plugin Name: Askace adverts
+ * Plugin Name: Askace Adverts
  * Description: To use css advert templates to show products and catalogue them.
- * Version: 0.4
+ * Version: 0.5
  * Author: rekarnar 
  * Author URI: http://rekarnar.com
  * License: GPL2 
  */
 
 global $askace_adverts_db_version;
-$askace_adverts_db_version = "0.4";
+$askace_adverts_db_version = "0.5";
 
 add_action('admin_menu', 'askace_adverts_menu_item');
 function askace_adverts_menu_item(){
@@ -53,8 +53,6 @@ add_action('admin_init', 'my_plugin_admin_init');
 function my_plugin_admin_init() {
     global $wpdb;
     $wpdb->askace_adverts_table_name = "{$wpdb->prefix}askace_adverts";
-    //global $askace_adverts_db_version;
-
     //add_action( 'admin_notices', 'plugin_activated_notice' );
 }
 
@@ -63,7 +61,8 @@ function my_plugin_admin_init() {
 add_action('plugins_loaded', 'askace_adverts_update_db_check');
 function askace_adverts_update_db_check() {
     global $askace_adverts_db_version;
-    if (get_site_option( 'askace_adverts_db_version' ) != $askace_adverts_db_version) {
+    if (get_site_option( 'askace_adverts_db_version' ) != $askace_adverts_db_version)     
+    {
         askace_adverts_install();
     }
 }

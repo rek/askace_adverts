@@ -117,8 +117,8 @@
       <input name="layouttype" value="<?php echo $results['layouttype']; ?>" size="30">
     </p>
     <p>
-      <label>Image:</label>
-      <input id="upload_image" type="text" size="30" name="upload_image" value="<?php echo $results['image']; ?>" />
+      <label>Image Id:</label>
+      <input id="upload_image" type="text" size="30" name="upload_image" value="<?php echo $results['upload_image']; ?>" />
       <input id="upload_image_button" type="button" value="Select Image" />
     </p>
   </div>
