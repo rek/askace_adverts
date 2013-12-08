@@ -14,6 +14,9 @@
 </div>
 
 <?php
+  wp_enqueue_script('jquery'); // include jQuery
+  wp_register_script('askace_adverts', plugins_url("askace_adverts/script.js"), array('jquery','media-upload','thickbox'));
+  wp_enqueue_script('askace_adverts'); // include script.js
 
   $ok = false;
 
@@ -37,6 +40,7 @@
           'supplier'   => $_POST['supplier'],
           'email'      => $_POST['email'],
           'payment'    => $_POST['payment'],
+          'image'      => $_POST['upload_image'],
           'layouttype' => $_POST['layouttype'],
         ), array( 'ID' => $_POST['id'] ), array( '%s', '%s', '%s', '%s', '%s', '%d', '%s' ), array( '%d' ) );
 
@@ -50,6 +54,7 @@
           'email'      => $_POST['email'],
           'payment'    => $_POST['payment'],
           'layouttype' => $_POST['layouttype'],
+          'image'      => $_POST['upload_image'],
           'created_at' => current_time('mysql')
         ) );
 
@@ -110,6 +115,11 @@
     <p>
       <label>Layout Type:</label>
       <input name="layouttype" value="<?php echo $results['layouttype']; ?>" size="30">
+    </p>
+    <p>
+      <label>Image:</label>
+      <input id="upload_image" type="text" size="30" name="upload_image" value="<?php echo $results['image']; ?>" />
+      <input id="upload_image_button" type="button" value="Select Image" />
     </p>
   </div>
   <div>
