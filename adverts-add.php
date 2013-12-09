@@ -42,7 +42,7 @@
           'payment'    => $_POST['payment'],
           'image'      => $_POST['upload_image'],
           'layouttype' => $_POST['layouttype'],
-        ), array( 'ID' => $_POST['id'] ), array( '%s', '%s', '%s', '%s', '%s', '%d', '%s' ), array( '%d' ) );
+        ), array( 'ID' => $_POST['id'] ), array( '%s', '%s', '%s', '%s', '%s', '%s', '%s' ), array( '%d' ) );
 
         echo '<div class="updated"><p>Advert Updated</p></div>';
       } else { // adding

@@ -9,9 +9,9 @@
     }
      
     $pagenum = isset( $_GET['pagenum'] ) ? absint( $_GET['pagenum'] ) : 1;
-    $limit = 5;
+    $limit = 20;
     $offset = ( $pagenum - 1 ) * $limit;
-    $entries = $wpdb->get_results( "SELECT * FROM ".$wpdb->askace_adverts_table_name." LIMIT $offset, $limit" );
+    $entries = $wpdb->get_results( "SELECT * FROM ".$wpdb->askace_adverts_table_name." order by id asc LIMIT $offset, $limit" );
      
 ?>
 
