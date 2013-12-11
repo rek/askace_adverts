@@ -62,11 +62,18 @@ require('shortcode.php');
 add_action( 'wp_ajax_preview_advert', 'preview_advert_callback' );
 function preview_advert_callback() {
     global $wpdb;
-
-    $advert = $_POST;
+    $a = $_POST['form'];
+    $advert->id = 0;
+    $advert->heading = $a['heading'];
+    $advert->summary = $a['summary'];
+    $advert->url = $a['url'];
+    $advert->supplier = $a['supplier'];
+    $advert->email = $a['email'];
+    $advert->payment = $a['payment'];
+    $advert->image = $a['upload_image'];
+    $advert->layouttype = $a['layouttype'];
 
     echo getAdWithLayout($advert);
-
     die(); // this is required to return a proper result
 }
 

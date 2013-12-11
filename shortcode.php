@@ -2,8 +2,8 @@
 
 function advert_display( $atts ) {
   extract( shortcode_atts( array(
-    'size'   => 'medium',
-    'layout' => rand(1,15),
+//    'size'   => 'medium',
+//    'layout' => 0,
     'id'     => 0
   ), $atts ) );
 
@@ -13,7 +13,7 @@ function advert_display( $atts ) {
   global $wpdb;
   $wpdb->askace_adverts_table_name = "{$wpdb->prefix}askace_adverts";
 
-  if ($id==0) {
+  if ($id==0) { // if a specific add is not requested, then just get a random one:
     $advert = $wpdb->get_row( 'select * from ' . $wpdb->askace_adverts_table_name . ' order by RAND() limit 0,1' );
   } else {
     $advert = $wpdb->get_row( 'select * from ' . $wpdb->askace_adverts_table_name . ' where id = '.$id );
@@ -52,6 +52,9 @@ function getAdWithLayout($advert) {
 */
 function getAdCode($advert, $style = 'tab-tall', $doubleImage = false)
 {
+  // set a default layout:
+  $advert->layouttype = $advert->layouttype ? $advert->layouttype : 1;
+
   $shortcode = "";
   $shortcode .= '<div class="'.$style.' askace-advert">';
   $shortcode .= '<form action="https://payment.swipehq.com/" method="POST" enctype="multipart/form-data">

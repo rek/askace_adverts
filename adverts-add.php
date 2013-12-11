@@ -1,7 +1,7 @@
 <style>
   form label{ display: block; }
   .error{ color: red; margin-top: 10px; }
-  .preview{ float:right; margin: 100px 50% 0 0; }
+  .preview{ float:right; margin: 100px 25% 0 0; }
   .wrap.askace_add{ float:left; }
   #preview{ cursor: pointer; color: #21759b; text-decoration: underline; }
 </style>
@@ -19,6 +19,7 @@
   wp_enqueue_script('jquery'); // include jQuery
   wp_register_script('askace_adverts', plugins_url("askace_adverts/script.js"), array('jquery','media-upload','thickbox'));
   wp_enqueue_script('askace_adverts'); // include script.js
+  // include the styles here too, so that we can do a sweet preview
   wp_register_style('askace_advert_styles', plugins_url("askace_adverts/styles.css"));
   wp_enqueue_style('askace_advert_styles');
 
@@ -85,7 +86,7 @@
   }
 ?>
 
-<form action="" method="post">
+<form action="" method="post" id="advert_form">
   <div>
     <p>
       <label>
@@ -147,7 +148,16 @@
     jQuery("#preview").click(function(e){
       var data = {
 	action: 'preview_advert',
-	form: jQuery("form").serializeArray()
+	form: {
+          heading: jQuery('input[name=heading]').val(),
+          summary: jQuery('textarea[name=summary]').val(),
+          url: jQuery('input[name=url]').val(),
+          supplier: jQuery('input[name=supplier]').val(),
+          email: jQuery('input[name=email]').val(),
+          payment: jQuery('input[name=payment]').val(),
+          upload_image: jQuery('input[name=upload_image]').val(),
+          layouttype: jQuery('input[name=layouttype]').val()
+        }
       };
       jQuery.post(ajaxurl, data, function(response) {
 	jQuery('.preview').html(response);
