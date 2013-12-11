@@ -40,8 +40,8 @@
           'supplier'   => $_POST['supplier'],
           'email'      => $_POST['email'],
           'payment'    => $_POST['payment'],
-          'image'      => $_POST['upload_image'],
-          'layouttype' => $_POST['layouttype'],
+          'image'      => $_POST['upload_image']
+          //'layouttype' => $_POST['layouttype'],
         ), array( 'ID' => $_POST['id'] ), array( '%s', '%s', '%s', '%s', '%s', '%s', '%s' ), array( '%d' ) );
 
         echo '<div class="updated"><p>Advert Updated</p></div>';
@@ -53,7 +53,7 @@
           'supplier'   => $_POST['supplier'],
           'email'      => $_POST['email'],
           'payment'    => $_POST['payment'],
-          'layouttype' => $_POST['layouttype'],
+          //'layouttype' => $_POST['layouttype'],
           'image'      => $_POST['upload_image'],
           'created_at' => current_time('mysql')
         ) );
@@ -114,10 +114,10 @@
       <label>Payment:</label>
       <input name="payment" value="<?php echo $results['payment']; ?>" size="30">
     </p>
-    <p>
+    <!--<p>
       <label>Layout Type:</label>
-      <input name="layouttype" value="<?php echo $results['layouttype']; ?>" size="30">
-    </p>
+      <input name="layouttype" value="<?php //echo $results['layouttype']; ?>" size="30">
+    </p>-->
     <p>
       <label>Image Id:</label>
       <input id="upload_image" type="text" size="30" name="upload_image" value="<?php echo $results['image']; ?>" />
