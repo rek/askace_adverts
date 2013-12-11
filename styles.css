@@ -1,0 +1,1659 @@
+.askace-advert { font-size:100%;color:#003d70;font-family:Gill Sans, Futura, Century Gothic, AppleGothic, sans-serif; }
+.askace-advert img {
+    max-width: 96%;
+}
+
+/*- TALL ADVERT FRAME --------------------------- */
+.tab-tall {
+    height:375px;
+    width:223px;
+    border: 2px solid #222;
+    background: #F3FFF3;
+
+    float: left;
+    overflow: hidden;
+
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+
+    box-shadow: 0 5px 25px #ebebeb;
+    -moz-box-shadow: 0 5px 25px #ebebeb;
+    -webkit-box-shadow: 0 5px 25px #ebebeb;
+
+}
+
+/*- SQUARE ADVERT FRAME --------------------------- */
+	.tab-square {
+	height:250px;
+	width:223px;
+	border: 2px solid #222;
+	background: #F3FFF3;
+
+	float: left;
+    overflow: hidden;
+
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+
+    box-shadow: 0 5px 25px #ebebeb;
+    -moz-box-shadow: 0 5px 25px #ebebeb;
+    -webkit-box-shadow: 0 5px 25px #ebebeb;
+}
+
+/*- FLAT WIDE ADVERT --------------------------- */
+	.tab-flat {
+	height:125px;
+	width:450px;
+	border: 2px solid #222;
+	background: #F3FFF3;
+
+	float: left;
+    overflow: hidden;
+
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+
+    box-shadow: 0 5px 25px #ebebeb;
+    -moz-box-shadow: 0 5px 25px #ebebeb;
+    -webkit-box-shadow: 0 5px 25px #ebebeb;
+}
+
+/*- 
+© Surface Productions Limited 2014. This text belongs to Surface Productions. You are not authorised to use it without asking permission from Steve Chernishov. Email: steve@surfaceproductions.com
+*/
+
+/*- CSS ADVERT TEMPLATE1 --------------------------- */
+#tab1 {
+	line-height: 1.466;
+	letter-spacing: -0.1em;
+    margin: 0 auto;
+}
+
+ul#tab1 {
+    margin-left: 0;
+    list-style-type: none;
+    list-style-position: outside;
+    color: #221e1f;
+    position: relative;
+}
+
+ul#tab1 li {
+    float: left;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+/*- SAME SIZE A TEMPLATE CALLED quarter in _columns.css --------------------------- */
+ul#tab1 li a.box {
+	position: absolute; top:  0px; left:  0px;
+	height:333px;
+	width:219px;
+	border: 2px solid #eee000;
+	overflow: hidden;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+
+ul#tab1 li a.img {
+    position: absolute; top: 86px; left: 8px;
+	max-width: 130px;
+	max-height: 130px;
+    overflow: hidden;
+}
+
+ul#tab1 li a.heading {
+	width: 200px;
+	height: 80px;
+    position: absolute; top: 2px; left: 9px;
+
+    font-size: 33px;
+	font-weight: 100;
+	line-height: 1.066;
+    color: #222222;
+    text-align: left;
+}
+
+ul#tab1 li a.supplier {
+    position: absolute; top: 86px; left:  140px;
+	width: 70px;
+	height: 134px;
+
+    font-size: 15px;
+    color: #222222;
+    text-align: right;
+}
+
+ul#tab1 li a.url {
+    position: absolute; top: 224px; left: 10px;
+	width: 200px;
+	height: 20px;
+
+    font-size: 18px;
+    color: #000777;
+    text-align: center;
+}
+
+ul#tab1 li a.email {
+    position: absolute; top: 247px; left: 18px;
+	width: 180px;
+	height: 20px;
+
+    font-size: 14px;
+	font-weight: 100;
+    color: #222222;
+    text-align: left;
+}
+
+ul#tab1 li a.summary {
+    position: absolute; top: 270px; left: 5px;
+	width: 200px;
+	height: 50px;
+
+	padding: 5px 0px 0px 10px;
+    border-top: 2px solid #C77000;
+    border-bottom: 2px solid #C77000;
+
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    color: #C77000;
+    text-align: left;
+}
+
+ul#tab1 li a:hover {
+    border: 2px solid red;
+}
+
+/*- CSS ADVERT TEMPLATE2 --------------------------- */
+#tab2 {
+	line-height: 1.366;
+	letter-spacing: -0.1em;
+    margin: 0 auto;
+}
+
+ul#tab2 {
+    margin-left: 0;
+    list-style-type: none;
+    list-style-position: outside;
+    color: #221e1f;
+    position: relative;
+}
+
+ul#tab2 li {
+    float: left;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+/*- SAME SIZE A TEMPLATE CALLED quarter in _columns.css --------------------------- */
+ul#tab2 li a.box {
+	position: absolute; top:  0px; left:  0px;
+	height:333px;
+	width:219px;
+	border: 2px solid #eee000;
+	overflow: hidden;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+
+}
+
+ul#tab2 li a.img {
+    position: absolute; top:  140px; left:  30px;
+	max-width: 160px;
+	max-height: 150px;
+    overflow: hidden;
+}
+
+ul#tab2 li a.heading {
+	width: 200px;
+	height: 56px;
+    position: absolute; top: 0px; left: 10px;
+
+    font-size: 26px;
+    font-weight: 100;
+    letter-spacing: 0.05em;
+    color: #222222;
+    text-align: center;
+}
+
+ul#tab2 li a.supplier {
+    position: absolute; top: 60px; left:  10px;
+	width: 200px;
+	height: 40px;
+
+    font-size: 18px;
+	line-height: 1.166;
+
+    color: #222222;
+    text-align: center;
+}
+
+ul#tab2 li a.url {
+    position: absolute; top: 314px; left: 10px;
+	width: 200px;
+	height: 17px;
+
+    font-size: 16px;
+    color: #000777;
+    text-align: center;
+}
+
+ul#tab2 li a.email {
+    position: absolute; top: 292px; left: 10px;
+	width: 200px;
+	height: 20px;
+
+    font-size: 15px;
+	font-weight: bold;
+    color: #222222;
+    text-align: center;
+}
+
+ul#tab2 li a.summary {
+    position: absolute; top:  104px; left:  7px;
+	width: 190px;
+	height: 30px;
+
+	padding: 3px 10px 0px 0px;
+    border-top: 2px solid #C77000;
+    border-bottom: 2px solid #C77000;
+
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: #C77000;
+    text-align: right;
+}
+
+ul#tab2 li a:hover {
+    border: 2px solid red;
+}
+
+/*- CSS ADVERT TEMPLATE3 --------------------------- */
+#tab3 {
+	line-height: 1.366;
+	letter-spacing: -0.1em;
+    margin: 0 auto;
+}
+
+ul#tab3 {
+    margin-left: 0;
+    list-style-type: none;
+    list-style-position: outside;
+    color: #221e1f;
+    position: relative;
+}
+
+ul#tab3 li {
+    float: left;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+ul#tab3 li a.box {
+	position: absolute; top:  0px; left:  0px;
+	height:333px;
+	width:219px;
+	border: 2px solid #eee000;
+	overflow: hidden;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+
+}
+
+ul#tab3 li a.img {
+    position: absolute; top:  50px; left:  10px;
+	max-width: 90px;
+	max-height: 90px;
+    overflow: hidden;
+}
+
+ul#tab3 li a.img2 {
+    position: absolute; top:  50px; left:  120px;
+	max-width: 90px;
+	max-height: 90px;
+    overflow: hidden;
+}
+
+ul#tab3 li a.heading {
+	width: 200px;
+	height: 70px;
+    position: absolute; top: 140px; left: 10px;
+
+    font-size: 33px;
+	font-weight: 800;
+	line-height: 0.966;
+    color: #222222;
+    text-align: center;
+}
+
+ul#tab3 li a.supplier {
+    position: absolute; top: 220px; left:  10px;
+	width: 200px;
+	height: 40px;
+
+    font-size: 18px;
+	line-height: 1.166;
+    color: #222222;
+    text-align: left;
+}
+
+ul#tab3 li a.url {
+    position: absolute; top: 6px; left: 10px;
+	width: 200px;
+	height: 20px;
+	letter-spacing: 0.05em;
+
+    font-size: 15px;
+    color: #000777;
+    text-align: center;
+}
+
+ul#tab3 li a.email {
+    position: absolute; top: 28px; left: 8px;
+	width: 206px;
+	height: 20px;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: #222222;
+    text-align: left;
+}
+
+ul#tab3 li a.summary {
+    position: absolute; top:  266px; left:  7px;
+	width: 200px;
+	height: 55px;
+
+	padding: 5px 5px 0px 5px;
+    border-top: 2px solid #C77000;
+    border-bottom: 2px solid #C77000;
+
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: #C77000;
+    text-align: center;
+}
+
+ul#tab3 li a:hover {
+    border: 2px solid red;
+}
+
+/*- CSS ADVERT TEMPLATE4 --------------------------- */
+#tab4 {
+	line-height: 1.366;
+	letter-spacing: -0.1em;
+    margin: 0 auto;
+}
+
+ul#tab4 {
+    margin-left: 0;
+    list-style-type: none;
+    list-style-position: outside;
+    color: #221e1f;
+    position: relative;
+}
+
+ul#tab4 li {
+    float: left;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+ul#tab4 li a.box {
+	position: absolute; top:  0px; left:  0px;
+	height:333px;
+	width:219px;
+	border: 2px solid #eee000;
+	overflow: hidden;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+
+}
+
+ul#tab4 li a.img {
+    position: absolute; top: 6px; left:  25px;
+	max-width: 170px;
+	max-height: 170px;
+    overflow: hidden;
+}
+
+ul#tab4 li a.heading {
+    position: absolute; top: 172px; left: 10px;
+	width: 200px;
+	height: 60px;
+
+    font-size: 26px;
+	font-weight: 100;
+	line-height: 1.366;
+    color: #222222;
+    text-align: center;
+}
+
+ul#tab4 li a.supplier {
+    position: absolute; top: 234px; left:  10px;
+	width: 200px;
+	height: 42px;
+
+    font-size: 15px;
+    color: #222222;
+    text-align: right;
+}
+
+ul#tab4 li a.url {
+    position: absolute; top: 287px; left: 10px;
+	width: 200px;
+	height: 20px;
+
+    font-size: 15px;
+    color: #000777;
+    text-align: center;
+}
+
+ul#tab4 li a.email {
+    position: absolute; top: 311px; left: 10px;
+	width: 200px;
+	height: 20px;
+
+    font-size: 15px;
+	font-weight: bold;
+    color: #222222;
+    text-align: center;
+}
+
+ul#tab4 li a.summary {
+    position: absolute; top:  335px; left:  10px;
+	width: 190px;
+	height: 35px;
+
+	padding: 0px 0px 0px 10px;
+
+    font-size: 9px;
+    color: #C77000;
+    text-align: left;
+}
+
+ul#tab4 li a:hover {
+    border: 2px solid red;
+}
+
+
+/*- CSS ADVERT TEMPLATE5 --------------------------- */
+#tab5 {
+	line-height: 1.366;
+	letter-spacing: -0.1em;
+    margin: 0 auto;
+}
+
+ul#tab5 {
+    margin-left: 0;
+    list-style-type: none;
+    list-style-position: outside;
+    color: #221e1f;
+    position: relative;
+}
+
+ul#tab5 li {
+    float: left;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+ul#tab5 li a.box {
+	position: absolute; top:  0px; left:  0px;
+	height:333px;
+	width:219px;
+	border: 2px solid #eee000;
+	overflow: hidden;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+
+}
+
+ul#tab5 li a.img {
+    position: absolute; top:  105px; left:  30px;
+	max-width: 160px;
+	max-height: 160px;
+    overflow: hidden;
+}
+
+ul#tab5 li a.heading {
+	width: 200px;
+	height: 54px;
+    position: absolute; top: 50px; left: 10px;
+
+    font-size: 30px;
+	font-weight: 800;
+	line-height: 0.966;
+    color: #222222;
+    text-align: center;
+}
+
+ul#tab5 li a.supplier {
+    position: absolute; top: 260px; left:  10px;
+	width: 200px;
+	height: 20px;
+
+    font-size: 13px;
+    color: #222222;
+    text-align: center;
+	line-height: 1.166;
+}
+
+ul#tab5 li a.url {
+    position: absolute; top: 5px; left: 10px;
+	width: 200px;
+	height: 20px;
+
+    font-size: 15px;
+    font-weight: bold;
+    color: #000777;
+    text-align: center;
+}
+
+ul#tab5 li a.email {
+    position: absolute; top: 28px; left: 5px;
+    width: 209px;
+    height: 16px;
+
+    font-size: 12px;
+    color: #222222;
+    text-align: right;
+}
+
+ul#tab5 li a.summary {
+    position: absolute; top:  282px; left:  10px;
+	width: 190px;
+	height: 40px;
+
+	padding: 5px 0px 0px 10px;
+    border-left: 2px solid #C77000;
+    border-right: 2px solid #C77000;
+
+    font-size: 11px;
+    color: #C77000;
+    text-align: left;
+}
+
+ul#tab5 li a:hover {
+    border: 2px solid red;
+}
+
+
+/*- CSS ADVERT TEMPLATE6 --------------------------- */
+#tab6 {
+	line-height: 1.366;
+	letter-spacing: -0.1em;
+    margin: 0 auto;
+}
+
+ul#tab6 {
+    margin-left: 0;
+    list-style-type: none;
+    list-style-position: outside;
+    color: #221e1f;
+    position: relative;
+}
+
+ul#tab6 li {
+    float: left;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+ul#tab6 li a.box {
+	position: absolute; top:  0px; left:  0px;
+	height:333px;
+	width:219px;
+	border: 2px solid #eee000;
+	overflow: hidden;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+
+}
+
+ul#tab6 li a.img {
+    position: absolute; top:  8px; left:  96px;
+	max-width: 115px;
+	max-height: 115px;
+    overflow: hidden;
+}
+
+ul#tab6 li a.heading {
+	width: 200px;
+	height: 100px;
+    position: absolute; top: 226px; left: 10px;
+
+    font-size: 44px;
+	font-weight: 100;
+	padding: 5px 0px 0px 0px;
+	line-height: 1.066;
+    color: #222222;
+    text-align: center;
+
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+ul#tab6 li a.supplier {
+    position: absolute; top: 15px; left:  2px;
+	width: 90px;
+	height: 95px;
+
+    font-size: 13px;
+    color: #222222;
+	line-height: 1.266;
+    text-align: right;
+}
+
+ul#tab6 li a.url {
+    position: absolute; top: 202px; left: 10px;
+	width: 200px;
+	height: 20px;
+
+    font-size: 16px;
+    color: #000777;
+    text-align: center;
+}
+
+ul#tab6 li a.email {
+    position: absolute; top: 180px; left: 5px;
+	width: 210px;
+	height: 20px;
+
+	font-style: italic;
+    font-size: 14px;
+	font-weight: 600;
+    color: #222222;
+    text-align: center;
+}
+
+ul#tab6 li a.summary {
+    position: absolute; top:  115px; left:  14px;
+	width: 190px;
+	height: 60px;
+
+    font-size: 11px;
+    color: #C77000;
+    text-align: right;
+}
+
+ul#tab6 li a:hover {
+    border: 2px solid red;
+}
+
+
+/*- CSS ADVERT TEMPLATE7 --------------------------- */
+#tab7 {
+	line-height: 1.366;
+	letter-spacing: -0.1em;
+    margin: 0 auto;
+}
+
+ul#tab7 {
+    margin-left: 0;
+    list-style-type: none;
+    list-style-position: outside;
+    color: #221e1f;
+    position: relative;
+}
+
+ul#tab7 li {
+    float: left;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+ul#tab7 li a.box {
+	position: absolute; top:  0px; left:  0px;
+	height:333px;
+	width:219px;
+	border: 2px solid #eee000;
+	overflow: hidden;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+
+}
+
+ul#tab7 li a.img {
+    position: absolute; top:  166px; left:  25px;
+	max-width: 170px;
+	max-height: 170px;
+    overflow: hidden;
+}
+
+ul#tab7 li a.heading {
+	width: 200px;
+	height: 60px;
+    position: absolute; 
+    top: 29px; left: 10px;
+
+    font-size: 27px;
+	font-weight: 100;
+	line-height: 1.066;
+    color: #222222;
+    text-align: center;
+}
+
+ul#tab7 li a.supplier {
+    position: absolute; top: 6px; left:  12px;
+	width: 181px;
+	height: 20px;
+
+    font-size: 18px;
+    color: #222222;
+	padding: 0px 5px 0px 10px;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+	line-height: 1.266;
+    text-align: left;
+}
+
+ul#tab7 li a.url {
+    position: absolute; top: 136px; left: 10px;
+	width: 200px;
+	height: 20px;
+
+	font-style: italic;
+	font-weight: 600;
+    font-size: 14px;
+    color: #000777;
+    text-align: center;
+}
+
+ul#tab7 li a.email {
+    position: absolute; top: 150px; left: 25px;
+	width: 185px;
+	height: 20px;
+
+	font-style: italic;
+    font-size: 14px;
+	font-weight: 600;
+    color: #222222;
+    text-align: left;
+}
+
+ul#tab7 li a.summary {
+    position: absolute; top:  94px; left:  15px;
+	width: 175px;
+	height: 40px;
+	padding: 0px 5px 0px 10px;
+
+    font-size: 10px;
+    color: #C77000;
+    text-align: right;
+}
+
+ul#tab7 li a:hover {
+    border: 2px solid red;
+}
+
+/*- CSS ADVERT TEMPLATE8 --------------------------- */
+#tab8 {
+	line-height: 1.366;
+	letter-spacing: -0.1em;
+    margin: 0 auto;
+}
+
+ul#tab8 {
+    margin-left: 0;
+    list-style-type: none;
+    list-style-position: outside;
+    color: #221e1f;
+    position: relative;
+}
+
+ul#tab8 li {
+    float: left;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+ul#tab8 li a.box {
+	position: absolute; top:  0px; left:  0px;
+	height:333px;
+	width:219px;
+	border: 2px solid #eee000;
+	overflow: hidden;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+
+}
+
+ul#tab8 li a.img {
+    position: absolute; top: 170px; left: 20px;
+	max-width: 85px;
+	max-height: 140px;
+    overflow: hidden;
+}
+
+ul#tab8 li a.img2 {
+    position: absolute; top:  70px; left:  120px;
+	max-width: 90px;
+	max-height: 140px;
+    overflow: hidden;
+}
+
+ul#tab8 li a.heading {
+	width: 200px;
+	height: 60px;
+    position: absolute; top: 6px; left: 10px;
+
+    font-size: 29px;
+	font-weight: 800;
+    font-variant: small-caps;
+	line-height: 1.066;
+    color: #222222;
+    text-align: center;
+}
+
+ul#tab8 li a.supplier {
+    position: absolute; top: 70px; left:  10px;
+	width: 100px;
+	height: 90px;
+
+    font-size: 16px;
+    color: #222222;
+	line-height: 1.266;
+    text-align: left;
+}
+
+ul#tab8 li a.url {
+    position: absolute; top: 290px; left: 10px;
+	width: 200px;
+	height: 20px;
+
+	font-style: italic;
+	font-weight: 600;
+    font-size: 18px;
+    color: #000777;
+    text-align: center;
+}
+
+ul#tab8 li a.email {
+    position: absolute; top: 310px; left: 8px;
+	width: 202px;
+	height: 18px;
+
+	font-style: italic;
+    font-size: 14px;
+	font-weight: 600;
+    color: #222222;
+    text-align: center;
+}
+
+ul#tab8 li a.summary {
+    position: absolute; top:  170px; left:  120px;
+	width: 90px;
+	height: 115px;
+
+    font-size: 10px;
+    color: #C77000;
+    text-align: left;
+}
+
+ul#tab8 li a:hover {
+    border: 2px solid red;
+}
+
+/*- CSS ADVERT TEMPLATE9 --------------------------- */
+#tab9 {
+	line-height: 1.366;
+	letter-spacing: -0.1em;
+    margin: 0 auto;
+}
+
+ul#tab9 {
+    margin-left: 0;
+    list-style-type: none;
+    list-style-position: outside;
+    color: #221e1f;
+    position: relative;
+}
+
+ul#tab9 li {
+    float: left;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+ul#tab9 li a.box {
+	position: absolute; top:  0px; left:  0px;
+	height:208px;
+	width:219px;
+	border: 2px solid #eee000;
+	overflow: hidden;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+
+}
+
+ul#tab9 li a.img {
+    position: absolute; top:  5px; left:  126px;
+	max-width: 86px;
+	max-height: 86px;
+    overflow: hidden;
+}
+
+ul#tab9 li a.heading {
+	width: 116px;
+	height: 80px;
+    position: absolute; top: 5px; left: 5px;
+
+    font-size: 23px;
+	font-weight: 800;
+       font-variant: small-caps;
+	line-height: 1.066;
+    color: #222222;
+    text-align: right;
+}
+
+ul#tab9 li a.supplier {
+    position: absolute; top: 91px; left:  2px;
+	width: 199px;
+	height: 20px;
+
+    font-size: 14px;
+    color: #222222;
+	padding: 8px 10px 0px 10px;
+	border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+	line-height: 1.266;
+    text-align: right;
+}
+
+ul#tab9 li a.url {
+    position: absolute; top: 123px; left: 10px;
+	width: 200px;
+	height: 20px;
+
+	font-style: italic;
+	font-weight: 600;
+    font-size: 16px;
+    color: #000777;
+    text-align: right;
+}
+
+ul#tab9 li a.email {
+    position: absolute; top: 140px; left: 10px;
+	width: 200px;
+	height: 20px;
+
+	font-style: italic;
+    font-size: 14px;
+	font-weight: 600;
+    color: #222222;
+    text-align: right;
+}
+
+ul#tab9 li a.summary {
+    position: absolute; top:  159px; left:  4px;
+	width: 200px;
+	height: 40px;
+	padding: 5px 0px 0px 10px;
+    font-size: 11px;
+    color: #C77000;
+    text-align: left;
+}
+
+ul#tab9 li a:hover {
+    border: 2px solid red;
+}
+
+/*- CSS ADVERT TEMPLATE10 --------------------------- */
+#tab10 {
+	line-height: 1.366;
+	letter-spacing: -0.1em;
+    margin: 0 auto;
+}
+
+ul#tab10 {
+    margin-left: 0;
+    list-style-type: none;
+    list-style-position: outside;
+    color: #221e1f;
+    position: relative;
+}
+
+ul#tab10 li {
+    float: left;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+ul#tab10 li a.box {
+	position: absolute; top:  0px; left:  0px;
+	height:208px;
+	width:219px;
+	border: 2px solid #eee000;
+	overflow: hidden;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+
+}
+
+ul#tab10 li a.img {
+    position: absolute; top:  5px; left:  10px;
+	max-width: 120px;
+	max-height: 120px;
+    overflow: hidden;
+}
+
+ul#tab10 li a.heading {
+	width: 210px;
+	height: 20px;
+    position: absolute; top: 185px; left: 5px;
+
+    font-size: 21px;
+	font-weight: 800;
+    font-variant: small-caps;
+	line-height: 1.066;
+    color: #222222;
+    text-align: center;
+}
+
+ul#tab10 li a.supplier {
+    position: absolute; top: 168px; left:  10px;
+	width: 200px;
+	height: 16px;
+
+    font-size: 13px;
+    color: #222222;
+	line-height: 1.266;
+    text-align: right;
+}
+
+ul#tab10 li a.url {
+    position: absolute; top: 124px; left: 10px;
+	width: 200px;
+	height: 20px;
+
+	font-style: italic;
+	font-weight: 100;
+    font-size: 16px;
+    color: #000777;
+    text-align: center;
+}
+
+ul#tab10 li a.email {
+    position: absolute; top: 146px; left: 10px;
+	width: 205px;
+	height: 20px;
+
+	font-style: italic;
+    font-size: 14px;
+	font-weight: 600;
+    border-bottom: 2px solid #000000;
+    color: #222222;
+    text-align: center;
+}
+
+ul#tab10 li a.summary {
+    position: absolute; top: 5px; left: 140px;
+	width: 70px;
+	height: 114px;
+
+    font-size: 11px;
+    color: #C77000;
+    text-align: left;
+}
+
+ul#tab10 li a:hover {
+    border: 2px solid red;
+}
+
+/*- CSS ADVERT TEMPLATE11 --------------------------- */
+#tab11 {
+	line-height: 1.366;
+	letter-spacing: -0.1em;
+    margin: 0 auto;
+}
+
+ul#tab11 {
+    margin-left: 0;
+    list-style-type: none;
+    list-style-position: outside;
+    color: #221e1f;
+    position: relative;
+}
+
+ul#tab11 li {
+    float: left;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+ul#tab11 li a.box {
+	position: absolute; top:  0px; left:  0px;
+	height:208px;
+	width:219px;
+	border: 2px solid #eee000;
+	overflow: hidden;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+
+}
+
+ul#tab11 li a.img {
+    position: absolute; top: 105px; left: 105px;
+	max-width: 105px;
+	max-height: 105px;
+    overflow: hidden;
+}
+
+ul#tab11 li a.heading {
+	width: 200px;
+	height: 40px;
+    position: absolute; top: 60px; left: 10px;
+
+    font-size: 22px;
+	font-weight: 800;
+    font-variant: small-caps;
+	padding: 0px 0px 0px 0px;
+	line-height: 1.066;
+    color: #222222;
+    text-align: center;
+}
+
+ul#tab11 li a.supplier {
+    position: absolute; top: 5px; left:  10px;
+	width: 200px;
+	height: 20px;
+
+    font-size: 14px;
+    color: #222222;
+    border-bottom: 2px solid #000000;
+	line-height: 1.266;
+    text-align: right;
+}
+
+ul#tab11 li a.url {
+    position: absolute; top: 26px; left: 10px;
+	width: 196px;
+	height: 16px;
+
+    font-size: 13px;
+    color: #000777;
+    text-align: right;
+}
+
+ul#tab11 li a.email {
+    position: absolute; top: 43px; left: 5px;
+	width: 200px;
+	height: 16px;
+
+	font-style: italic;
+    font-size: 12px;
+	font-weight: 600;
+    color: #222222;
+    text-align: right;
+}
+
+ul#tab11 li a.summary {
+    position: absolute; top:  110px; left:  10px;
+	width: 77px;
+	height: 92px;
+
+	padding: 2px 2px 0px 5px;
+    border-left: 2px solid #C77000;
+    border-right: 2px solid #C77000;
+
+    font-size: 11px;
+    color: #C77000;
+    text-align: left;
+}
+
+ul#tab11 li a:hover {
+    border: 2px solid red;
+}
+
+/*- CSS ADVERT TEMPLATE12 --------------------------- */
+#tab12 {
+	line-height: 1.366;
+	letter-spacing: -0.1em;
+    margin: 0 auto;
+}
+
+ul#tab12 {
+    margin-left: 0;
+    list-style-type: none;
+    list-style-position: outside;
+    color: #221e1f;
+    position: relative;
+}
+
+ul#tab12 li {
+    float: left;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+ul#tab12 li a.box {
+	position: absolute; top:  0px; left:  0px;
+	height:208px;
+	width:219px;
+	border: 2px solid #eee000;
+	overflow: hidden;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+ul#tab12 li a.img {
+    position: absolute; top:  5px; left:  120px;
+	max-width: 95px;
+	max-height: 95px;
+    overflow: hidden;
+}
+
+ul#tab12 li a.heading {
+	width: 110px;
+	height: 54px;
+    position: absolute; top: 36px; left: 6px;
+
+    font-size: 20px;
+	font-weight: 800;
+	padding: 5px 0px 0px 0px;
+	line-height: 1.066;
+    color: #222222;
+    text-align: left;
+}
+
+ul#tab12 li a.supplier {
+    position: absolute; top: 6px; left:  5px;
+	width: 110px;
+	height: 30px;
+
+    font-size: 12px;
+    color: #222222;
+	line-height: 1.266;
+    text-align: right;
+}
+
+ul#tab12 li a.url {
+    position: absolute; top: 100px; left: 10px;
+	width: 200px;
+	height: 20px;
+
+    font-size: 16px;
+    color: #000777;
+    text-align: center;
+}
+
+ul#tab12 li a.email {
+    position: absolute; top: 120px; left: 5px;
+	width: 130px;
+	height: 20px;
+
+	font-style: italic;
+    font-size: 14px;
+	font-weight: 600;
+    color: #222222;
+    text-align: center;
+}
+
+ul#tab12 li a.summary {
+    position: absolute; top:  140px; left:  6px;
+	width: 200px;
+	height: 60px;
+
+	padding: 2px 2px 0px 5px;
+    border-top: 2px solid #C77000;
+    border-bottom: 2px solid #C77000;
+
+    font-size: 11px;
+    color: #C77000;
+    text-align: left;
+}
+
+ul#tab12 li a:hover {
+    border: 2px solid red;
+}
+
+/*- CSS ADVERT TEMPLATE13 --------------------------- */
+#tab13 {
+	line-height: 1.366;
+	letter-spacing: -0.1em;
+    margin: 0 auto;
+}
+
+ul#tab13 {
+    margin-left: 0;
+    list-style-type: none;
+    list-style-position: outside;
+    color: #221e1f;
+    position: relative;
+}
+
+ul#tab13 li {
+    float: left;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+ul#tab13 li a.box {
+	position: absolute; top:  0px; left:  0px;
+	height:208px;
+	width:219px;
+	border: 2px solid #eee000;
+	overflow: hidden;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+
+}
+
+ul#tab13 li a.img {
+    position: absolute; top:  20px; left:  110px;
+	max-width: 100px;
+	max-height: 100px;
+    overflow: hidden;
+}
+
+ul#tab13 li a.heading {
+	width: 100px;
+	height: 90px;
+    position: absolute; top: 20px; left: 5px;
+
+    font-size: 24px;
+	font-weight: 800;
+    font-variant: small-caps;
+	padding: 5px 0px 0px 0px;
+	line-height: 1.066;
+    color: #222222;
+    text-align: left;
+}
+
+ul#tab13 li a.supplier {
+    position: absolute; top: 5px; left: 10px;
+	width: 200px;
+	height: 14px;
+
+    font-size: 12px;
+    color: #222222;
+	line-height: 1.266;
+    text-align: right;
+}
+
+ul#tab13 li a.url {
+    position: absolute; top: 135px; left: 10px;
+	width: 200px;
+	height: 20px;
+
+	font-style: italic;
+    font-size: 19px;
+    color: #000777;
+    text-align: right;
+}
+
+ul#tab13 li a.email {
+    position: absolute; top: 120px; left: 5px;
+	width: 208px;
+	height: 16px;
+
+	font-style: italic;
+    font-size: 13px;
+	font-weight: 600;
+    color: #222222;
+    text-align: center;
+}
+
+ul#tab13 li a.summary {
+    position: absolute; top:  160px; left:  10px;
+	width: 200px;
+	height: 40px;
+
+    border-top: 2px solid #C77000;
+    border-bottom: 2px solid #C77000;
+
+    font-size: 12px;
+    color: #C77000;
+    text-align: left;
+}
+
+ul#tab13 li a:hover {
+    border: 2px solid red;
+}
+
+
+/*- CSS ADVERT TEMPLATE14 --------------------------- */
+#tab14 {
+	line-height: 1.366;
+	letter-spacing: -0.1em;
+    margin: 0 auto;
+}
+
+ul#tab14 {
+    margin-left: 0;
+    list-style-type: none;
+    list-style-position: outside;
+    color: #221e1f;
+    position: relative;
+}
+
+ul#tab14 li {
+    float: left;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+ul#tab14 li a.box {
+	position: absolute; top:  0px; left:  0px;
+	height:208px;
+	width:219px;
+	border: 2px solid #eee000;
+	overflow: hidden;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+ul#tab14 li a.img {
+    position: absolute; top:  45px; left:  116px;
+	max-width: 100px;
+	max-height: 100px;
+    overflow: hidden;
+}
+
+ul#tab14 li a.heading {
+	width: 200px;
+	height: 40px;
+    position: absolute; top: 155px; left: 10px;
+
+    font-size: 24px;
+	font-weight: 100;
+	padding: 5px 0px 0px 0px;
+	line-height: 1.066;
+    color: #222222;
+    text-align: center;
+
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+
+ul#tab14 li a.supplier {
+    position: absolute; top: 140px; left:  10px;
+	width: 200px;
+	height: 17px;
+
+    font-size: 13px;
+    color: #222222;
+	line-height: 1.266;
+    text-align: right;
+}
+
+ul#tab14 li a.url {
+    position: absolute; top: 4px; left: 10px;
+	width: 200px;
+	height: 20px;
+
+    font-size: 16px;
+    color: #000777;
+    text-align: center;
+}
+
+ul#tab14 li a.email {
+    position: absolute; top: 22px; left: 5px;
+	width: 200px;
+	height: 17px;
+
+	font-style: italic;
+    font-size: 14px;
+	font-weight: 600;
+    color: #222222;
+    text-align: center;
+}
+
+ul#tab14 li a.summary {
+    position: absolute; top:  40px; left:  5px;
+	width: 100px;
+	height: 130px;
+
+	padding: 2px 2px 0px 5px;
+
+    font-size: 13px;
+    color: #C77000;
+    text-align: left;
+}
+
+ul#tab14 li a:hover {
+    border: 2px solid red;
+}
+
+/*- CSS ADVERT TEMPLATE15 = Flat Advert --------------------------- */
+#tab15 {
+	line-height: 1.366;
+	letter-spacing: -0.1em;
+    margin: 0 auto;
+}
+
+ul#tab15 {
+    margin-left: 0;
+    list-style-type: none;
+    list-style-position: outside;
+    color: #221e1f;
+    position: relative;
+}
+
+ul#tab15 li {
+    float: left;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+ul#tab15 li a.box {
+	position: absolute; top:  0px; left:  0px;
+	height:83px;
+	width:446px;
+	border: 2px solid #eee000;
+	overflow: hidden;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+
+ul#tab15 li a.img {
+    position: absolute; top:  5px; left:  150px;
+	max-width: 80px;
+	max-height: 80px;
+    overflow: hidden;
+}
+
+ul#tab15 li a.img2 {
+    position: absolute; top:  5px; left:  5px;
+	max-width: 115px;
+	max-height: 115px;
+    overflow: hidden;
+}
+
+ul#tab15 li a.heading {
+    position: absolute; top: 5px; left:  5px;
+	width: 140px;
+	height: 55px;
+
+    font-size: 26px;
+	font-weight: 800;
+	line-height: 0.9;
+    color: #222222;
+    text-align: center;
+}
+
+ul#tab15 li a.supplier {
+    position: absolute; top:  4px; left:  230px;
+	width: 210px;
+	height: 22px;
+
+    font-size: 17px;
+    color: #222222;
+	line-height: 1.266;
+    text-align: center;
+}
+
+ul#tab15 li a.url {
+    position: absolute; top: 62px; left: 10px;
+	width: 130px;
+	height: 17px;
+
+	font-weight: 100;
+    font-size: 14px;
+    color: #000777;
+    text-align: center;
+}
+
+ul#tab15 li a.email {
+    position: absolute; top: 63px; left: 270px;
+	width: 170px;
+	height: 16px;
+
+	font-style: italic;
+    font-size: 13px;
+	font-weight: 600;
+    border-bottom: 2px solid #000000;
+    color: #222222;
+    text-align: center;
+}
+
+ul#tab15 li a.summary {
+    position: absolute; top:  30px; left:  234px;
+	width: 202px;
+	height: 27px;
+    padding: 2px;
+
+    font-size: 11px;
+	line-height: 1.166;
+    color: #C77000;
+    text-align: left;
+}
+
+ul#tab15 li a:hover {
+    border: 2px solid red;
+}
