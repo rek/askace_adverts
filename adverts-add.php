@@ -1,22 +1,26 @@
 <style>
   form label{ display: block; }
   .error{ color: red; margin-top: 10px; }
+  .preview{ float:right; margin: 100px 50% 0 0; }
+  .wrap.askace_add{ float:left; }
+  #preview{ cursor: pointer; color: #21759b; text-decoration: underline; }
 </style>
 
 <?php $edit = isset($_GET['id']); // check mode, add or edit ?>
 
-<div class="wrap">
+<div class="wrap askace_add">
   <?php if ($edit) {
     echo '<h2>Edit Advert ' . $_GET['id'] . '</h2>';
   } else {
     echo '<h2>Add New Advert</h2>';
   } ?>
-</div>
 
 <?php
   wp_enqueue_script('jquery'); // include jQuery
   wp_register_script('askace_adverts', plugins_url("askace_adverts/script.js"), array('jquery','media-upload','thickbox'));
   wp_enqueue_script('askace_adverts'); // include script.js
+  wp_register_style('askace_advert_styles', plugins_url("askace_adverts/styles.css"));
+  wp_enqueue_style('askace_advert_styles');
 
   $ok = false;
 
@@ -40,8 +44,8 @@
           'supplier'   => $_POST['supplier'],
           'email'      => $_POST['email'],
           'payment'    => $_POST['payment'],
-          'image'      => $_POST['upload_image']
-          //'layouttype' => $_POST['layouttype'],
+          'image'      => $_POST['upload_image'],
+          'layouttype' => $_POST['layouttype'],
         ), array( 'ID' => $_POST['id'] ), array( '%s', '%s', '%s', '%s', '%s', '%s', '%s' ), array( '%d' ) );
 
         echo '<div class="updated"><p>Advert Updated</p></div>';
@@ -53,7 +57,7 @@
           'supplier'   => $_POST['supplier'],
           'email'      => $_POST['email'],
           'payment'    => $_POST['payment'],
-          //'layouttype' => $_POST['layouttype'],
+          'layouttype' => $_POST['layouttype'],
           'image'      => $_POST['upload_image'],
           'created_at' => current_time('mysql')
         ) );
@@ -114,10 +118,10 @@
       <label>Payment:</label>
       <input name="payment" value="<?php echo $results['payment']; ?>" size="30">
     </p>
-    <!--<p>
-      <label>Layout Type:</label>
+    <p>
+      <label>Layout Type: (1-15)</label>
       <input name="layouttype" value="<?php //echo $results['layouttype']; ?>" size="30">
-    </p>-->
+    </p>
     <p>
       <label>Image Id:</label>
       <input id="upload_image" type="text" size="30" name="upload_image" value="<?php echo $results['image']; ?>" />
@@ -133,6 +137,25 @@
       $page     = 'askace_adverts/adverts-admin.php';
       $view_url = add_query_arg(compact('page'), admin_url('admin.php'));
     ?>
+    <span id="preview">Preview</span>
     <a href="<?php echo $view_url; ?>">View All</a>
   </div>
 </form>
+
+<script type="text/javascript">
+  jQuery(document).ready(function () {
+    jQuery("#preview").click(function(e){
+      var data = {
+	action: 'preview_advert',
+	form: jQuery("form").serializeArray()
+      };
+      jQuery.post(ajaxurl, data, function(response) {
+	jQuery('.preview').html(response);
+      });
+
+    });
+  });
+</script>
+
+</div>
+<div class="preview"></div>

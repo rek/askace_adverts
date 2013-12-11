@@ -19,25 +19,28 @@ function advert_display( $atts ) {
     $advert = $wpdb->get_row( 'select * from ' . $wpdb->askace_adverts_table_name . ' where id = '.$id );
   }
 
-  switch ($layout) {
-    case 15: return getAdCode($advert, $layout, 'tab-flat'); break;
+  return getAdWithLayout($advert);
+}
+
+function getAdWithLayout($advert) {
+  switch ($advert->layouttype) {
+    case 15: return getAdCode($advert, 'tab-flat'); break;
     case 14: 
     case 13: 
     case 12: 
     case 11: 
     case 10: 
-    case 9: return getAdCode($advert, $layout, 'tab-square'); break;
+    case 9: return getAdCode($advert, 'tab-square'); break;
     case 8:
-    case 3: return getAdCode($advert, $layout, 'tab-tall', true); break;
+    case 3: return getAdCode($advert, 'tab-tall', true); break;
     case 7: 
     case 6: 
     case 5: 
     case 4: 
     case 2: 
     case 1: 
-    default: return getAdCode($advert, $layout);
+    default: return getAdCode($advert);
   }
-
 }
 
 /**
@@ -47,14 +50,14 @@ function advert_display( $atts ) {
 * @param $style string - Class for the containing div
 * @param $doubleImage bool - Two images or one
 */
-function getAdCode($advert, $layout, $style = 'tab-tall', $doubleImage = false)
+function getAdCode($advert, $style = 'tab-tall', $doubleImage = false)
 {
   $shortcode = "";
-  $shortcode .= '<div class="'.$style.' askace-advert>';
+  $shortcode .= '<div class="'.$style.' askace-advert">';
   $shortcode .= '<form action="https://payment.swipehq.com/" method="POST" enctype="multipart/form-data">
 <div style="width:221px; height:36px; border: thin solid grey; background-color: #fff000; text-align: center; border-radius: 9px; cursor: pointer;"><table cellpadding="0" cellspacing="0" border="0" width="100%" height="100%">
 <tr><td><p style="font-family:\'Gill Sans\', \'Tahoma\', sans-serif; font-size: 10px; font-weight: bold; border: none;">Order: <input style="background-color: #facefe; border: 1px solid #000; padding: 3px;" type="text" id="item_quantity" name="item_quantity" size="1" value="1" /></p></td><td align="center" style="border: none;"><input style="cursor:pointer; color:#000; text-decoration: none; font-family:\'Gill Sans\', \'Tahoma\', sans-serif; font-size: 16px; font-weight: bold; border: none; background-color: #fff000;" type="submit" id="submit" value="BUY NOW" name="BUY NOW" /><input type="hidden" id="product_id" name="product_id" value="'.$advert->payment.'" /></td></tr></table></div></td></tr></table></form>';
-  $shortcode .= '<ul id="tab'.$layout.'"><li><a class="box"></a></li>';
+  $shortcode .= '<ul id="tab'.$advert->layouttype.'"><li><a class="box"></a></li>';
   $shortcode .= '<li><a class="img">' . get_image_tag($advert->image,$advert->heading,$advert->heading,'',$size) . "</a></li>";
   if($doubleImage) {
     $shortcode .= '<li><a class="img2">' . get_image_tag($advert->image,$advert->heading,$advert->heading,'',$size) . "</a></li>";

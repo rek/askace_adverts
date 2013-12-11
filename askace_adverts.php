@@ -59,6 +59,18 @@ function askace_adverts_admin_init() {
 
 require('shortcode.php');
 
+add_action( 'wp_ajax_preview_advert', 'preview_advert_callback' );
+function preview_advert_callback() {
+    global $wpdb;
+
+    $advert = $_POST;
+
+    echo getAdWithLayout($advert);
+
+    die(); // this is required to return a proper result
+}
+
+
 /**
 add_action('plugins_loaded', 'askace_adverts_update_db_check');
 function askace_adverts_update_db_check() {
