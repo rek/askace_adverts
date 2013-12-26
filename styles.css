@@ -1,6 +1,7 @@
 .askace-advert { font-size:100%;color:#003d70;font-family:Gill Sans, Futura, Century Gothic, AppleGothic, sans-serif; }
 .askace-advert img {
-    max-width: 96%;
+    max-width: 90px;
+    max-height: 90px;
 }
 
 /*- TALL ADVERT FRAME --------------------------- */

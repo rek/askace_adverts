@@ -44,8 +44,7 @@ function getAdWithLayout($advert) {
 }
 
 /**
-* Get the ad code
-*
+* Get the ad code (called when inserted in the post)
 * @param $advert Object - DB entry for the advert
 * @param $style string - Class for the containing div
 * @param $doubleImage bool - Two images or one
@@ -67,8 +66,8 @@ function getAdCode($advert, $style = 'tab-tall', $doubleImage = false)
   }
   $shortcode .= '<li><a class="heading">'.$advert->heading."</a></li>";
   $shortcode .= '<li><a class="supplier">'.$advert->supplier."</a></li>";
-  $shortcode .= '<li><a class="url"><u>'.$advert->url."</u></a></li>";
-  $shortcode .= '<li><a class="email"><u>'.$advert->email."</u></a></li>";
+  $shortcode .= '<li><a class="url" href="http://'.$advert->url.'" target="_blank"><u>'.$advert->url."</u></a></li>";
+  $shortcode .= '<li><a class="email" href="mailto:'.$advert->email.'?Subject='.$advert->heading.'" target="_top"><u>'.$advert->email."</u></a></li>";
   $shortcode .= '<li><a class="summary">'.$advert->summary."</a></li></ul></div>";
 
   return $shortcode;

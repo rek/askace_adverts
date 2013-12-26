@@ -121,7 +121,7 @@
     </p>
     <p>
       <label>Layout Type: (1-15)</label>
-      <input name="layouttype" value="<?php //echo $results['layouttype']; ?>" size="30">
+      <input name="layouttype" value="<?php echo $results['layouttype']; ?>" size="30">
     </p>
     <p>
       <label>Image Id:</label>
