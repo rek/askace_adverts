@@ -91,4 +91,8 @@
     $add_url = add_query_arg(compact('page'), admin_url('admin.php'));
 ?>
     <div><p><a href="<?php echo $add_url; ?>">Add New</a></p></div>
+    <div>&nbsp;</div>
+    <div><p>To display a random advert on your page, paste the following HTML code: <big>[askace-adverts]</big></p>
+<p>To display a specific advert, enter the following code: <big>[askace-adverts id=__]</big> <i>(placing the advert ID in <big>__</big> gap)</i> <small>eg: [askace-adverts id=16]</small></p>
+</div>
 </div>

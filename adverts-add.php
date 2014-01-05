@@ -37,6 +37,9 @@
     ) { $validated = false; }
 
     if ($validated) {
+
+      $_POST['url'] = str_replace('http://','',$_POST['url']);
+
       if ($edit) { // updating
         $wpdb->update( $wpdb->askace_adverts_table_name, array(
           'heading'    => $_POST['heading'],
@@ -47,7 +50,7 @@
           'payment'    => $_POST['payment'],
           'image'      => $_POST['upload_image'],
           'layouttype' => $_POST['layouttype'],
-        ), array( 'ID' => $_POST['id'] ), array( '%s', '%s', '%s', '%s', '%s', '%s', '%s' ), array( '%d' ) );
+        ), array( 'ID' => $_POST['id'] ), array( '%s', '%s', '%s', '%s', '%s', '%s', '%s' ), array( '%d'     ) );
 
         echo '<div class="updated"><p>Advert Updated</p></div>';
       } else { // adding
@@ -73,6 +76,8 @@
     }
 
     $results = $_POST;
+    $results['image'] = $_POST['upload_image'];
+
     $ok = true;
 
   } else { // loading the ad for editing:

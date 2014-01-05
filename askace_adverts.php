@@ -13,9 +13,9 @@ $askace_adverts_db_version = "0.6";
 
 add_action('admin_menu', 'askace_adverts_menu_item');
 function askace_adverts_menu_item(){
-    add_menu_page( 'Askace Ads', 'Askace Ads', 'manage_options', 'askace_adverts/adverts-admin.php', '', 'http://www.askace.com/favicon.ico', 67 );
+    add_menu_page( 'Askace Ads', 'Askace Ads', 'edit_adverts', 'askace_adverts/adverts-admin.php', '', 'http://www.askace.com/favicon.ico', 67 );
 
-    add_submenu_page( 'askace_adverts/adverts-admin.php', 'Add New', 'Add an Advert', 'manage_options', 'askace_adverts/adverts-add.php', '' );
+    add_submenu_page( 'askace_adverts/adverts-admin.php', 'Add New', 'Add an Advert', 'edit_adverts', 'askace_adverts/adverts-add.php', '' );
 
 }
 
@@ -55,10 +55,30 @@ function askace_adverts_admin_init() {
     global $wpdb;
     $wpdb->askace_adverts_table_name = "{$wpdb->prefix}askace_adverts";
     //add_action( 'admin_notices', 'plugin_activated_notice' );
+
+    $result = add_role(
+    'advert_editor',
+    __( 'Askace Advert Admin' ),
+    array(
+        'edit_adverts' => true,
+	'read' => true
+    )
+   );
+
+   $role = get_role( 'administrator' );
+   $role->add_cap( 'edit_adverts' ); 
+
 }
 
 require('shortcode.php');
 
+// add a lightbox class, so they open up nicely (via Simple Light TBox plugin)
+function bb_add_image_class($class){
+   $class .= ' lightBox';
+   return $class;
+}
+
+add_filter('get_image_tag_class','bb_add_image_class');
 add_action( 'wp_ajax_preview_advert', 'preview_advert_callback' );
 function preview_advert_callback() {
     global $wpdb;
